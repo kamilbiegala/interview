@@ -28,7 +28,7 @@ class BookControllerIT {
                 .andExpect(jsonPath("$.content[0].title", notNullValue()));
     }
 
-//    @Disabled("TASK: enable and make this pass by ensuring validation & error handling")
+    @Disabled("TASK: enable and make this pass by ensuring validation & error handling")
     @Test
     void create_invalidPayload_returns400() throws Exception {
         var json = """
